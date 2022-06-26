@@ -1,4 +1,4 @@
-package siit.homework01;
+package siit.homework02;
 
 // 4. Check if a number is palindrom( e.g palindrom 1221, 34143)
 

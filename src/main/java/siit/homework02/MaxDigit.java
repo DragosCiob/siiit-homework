@@ -1,4 +1,4 @@
-package siit.homework01;
+package siit.homework02;
 
 
 //3. Display the max digit from a number.

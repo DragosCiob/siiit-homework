@@ -1,4 +1,4 @@
-package siit.homework01;
+package siit.homework02;
 
 // 1. Calculate the sum of the first 100 numbers higher than 0
 

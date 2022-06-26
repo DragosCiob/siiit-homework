@@ -1,4 +1,4 @@
-package siit.homework01;
+package siit.homework02;
 
 
 // 5. Display all the prime numbers lower than a given number

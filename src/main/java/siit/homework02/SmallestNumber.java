@@ -1,4 +1,4 @@
-package siit.homework01;
+package siit.homework02;
 
 
 //2. Display the smallest number from an array of number
