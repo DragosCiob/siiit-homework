@@ -1,17 +1,16 @@
 package siit.homework07;
 
 
-import siit.homework06.Person;
 
 import java.util.*;
 
-public class SetOfStudent {
+public class SetOfStudents {
 
 
     /**
      * set of students by default ordered by name
      */
-    private static Set<Student> setOfStudents = new TreeSet<>( new NameComparator());
+    private  Set<Student> setOfStudents = new HashSet<>();
 
 
 
@@ -70,28 +69,30 @@ public class SetOfStudent {
     /**
      * Student Set ordered by date of birth.
      */
-    public void listStudentsByBirthDate(){
+    public  Set<Student> listStudentsByBirthDate(){
         Set<Student> studentSet = new TreeSet<>(new BirthDateComparator());
 
-        studentSet.addAll(studentSet);
-        for (Student student:studentSet) {
-            System.out.println(student);
-        }
+        studentSet.addAll(setOfStudents);
+//        for (Student student:studentSet) {
+//            System.out.println(student);
+//        }
+
+        return studentSet;
+    }
+    public  Set<Student> listStudentsByName(){
+        Set<Student> studentSet = new TreeSet<>(new NameComparator());
+
+        studentSet.addAll(setOfStudents);
+//        for (Student student:studentSet) {
+//            System.out.println(student);
+//        }
+
+        return studentSet;
     }
 
-
-//    @Override
-//    public int hashCode() {
-//        return super.hashCode();
-//    }
-//
-//    @Override
-//    public boolean equals(Object obj) {
-//        return super.equals(obj);
-//    }
-//
-//    @Override
-//    public String toString() {
-//        return super.toString();
-//    }
+    public Set<Student> getSetOfStudents() {
+        Set<Student> studentSet = new HashSet<>();
+        studentSet=setOfStudents;
+        return studentSet;
+    }
 }
