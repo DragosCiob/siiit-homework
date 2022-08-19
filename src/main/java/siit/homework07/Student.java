@@ -22,12 +22,12 @@ public class Student {
 //        this.cnp = cnp;
         try {
             if (firstName == null) {
-                throw new IllegalArgumentException("Everybody needs to have a first name");
+                throw new IllegalArgumentException("A first name must be inserted");
             }
             this.firstName = firstName;
 
             if (lastName == null) {
-                throw new IllegalArgumentException("Everybody needs to have a last name");
+                throw new IllegalArgumentException("A last name must be inserted");
             }
             this.lastName = lastName;
 
@@ -41,16 +41,15 @@ public class Student {
             this.dateOfBirth = LocalDate.of(yearOfBirth, monthOfBirth, dayOfBirth);
 
 
-            if (gender == null || (!gender.equalsIgnoreCase("Female") && !gender.equalsIgnoreCase("Male"))) {
+            if (gender == null || (!gender.equalsIgnoreCase("Female") && !gender.equalsIgnoreCase("Male"))){
                 throw new IllegalArgumentException("Gender must be Male or Female.");
-
             } else {
 
                 this.gender = gender;
             }
 
             if (cnp==null) {
-                throw new IllegalArgumentException("ID cannot be empty.");
+                throw new IllegalArgumentException("CNP cannot be empty.");
             }else{
                 this.cnp = cnp;
             }
