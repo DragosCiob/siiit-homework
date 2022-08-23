@@ -1,4 +1,4 @@
-package siit.test;
+package siit.midterm.test;
 
 public class Square implements Shape{
 
@@ -11,21 +11,21 @@ public class Square implements Shape{
     }
 
     @Override
-    public void getPerimeter() {
+    public double getPerimeter() {
         System.out.println("Square perimeter");
         double perimeter=0;
         perimeter=4*l1;
         System.out.println(perimeter);
-
+        return perimeter;
     }
 
     @Override
-    public void getSurfaceArea() {
+    public double getSurfaceArea() {
         System.out.println("Square surface area");
         double area=0;
         area=l1*l1;
         System.out.println(area);
-
+        return area;
     }
 
     public String getName() {

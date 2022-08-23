@@ -1,4 +1,4 @@
-package siit.test;
+package siit.midterm.test;
 
 public class Rectangle implements Shape{
 
@@ -15,19 +15,21 @@ public class Rectangle implements Shape{
     }
 
     @Override
-    public void getPerimeter() {
+    public double getPerimeter() {
         System.out.println("Rectangle perimeter");
         double perimeter=0;
         perimeter=2*l1+2*l2;
         System.out.println(perimeter);
+        return perimeter;
     }
 
     @Override
-    public void getSurfaceArea() {
+    public double getSurfaceArea() {
         System.out.println("Rectangle Surface area");
         double area=0;
         area=l1*l2;
         System.out.println(area);
+        return area;
     }
 
     public double getL1() {
